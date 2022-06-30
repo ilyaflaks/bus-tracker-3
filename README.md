@@ -22,6 +22,7 @@ My contributions are:
 - The feature that allows a user to select a particular bus number
 - The legend that explains which bus is being tracked and what Blue/Red icons represent
 - I decreased the zoom to better see routes further away from downtown Boston
+- Responsive to smaller screen sizes
 
 Possible Future improvements:
 - Make the zoom automatically adjust based on the route selected

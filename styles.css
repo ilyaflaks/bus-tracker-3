@@ -94,10 +94,28 @@ body {
 @media (max-width: 500px) {
   .split-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 4fr;
+    grid-template-rows: 4fr 4fr;
   }
 
   #map {
-    height: 69%;
+    height: 65%;
+  }
+}
+
+@media (orientation: landscape) and (min-device-width: 480px) and (max-device-width: 845px) {
+  .split-grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #map {
+    height: 100%;
+    width: 65%;
+  }
+
+  #sidebar {
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
   }
 }

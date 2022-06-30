@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Boston Bus Tracker</title>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDsxti1xcyhdu3UUr1d2UTBEgE69EkPwVo"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    CSS rules to specify families
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="split-grid">
+      <div id="map"></div>
+      <div id="sidebar">
+        <div class="input-field">
+          <p class="instructions">
+            Enter the number of the bus you are looking for:
+          </p>
+          <input
+            type="number"
+            name="busInput"
+            id="input"
+            placeholder="Number"
+          />
+          <br />
+          <button onclick="inputFunc()">Enter</button>
+        </div>
+        <div class="legend">
+          <div class="icon-legend">
+            <p>Now tracking bus number:</p>
+            <div class="badge" id="bus-badge">1</div>
+            <div class="icons">
+              <img src="blue.png" />
+              <p>bus going North</p>
+            </div>
+            <div class="icons">
+              <img src="red.png" />
+              <p>bus going South</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="mapanimation.js"></script>
+  </body>
+</html>

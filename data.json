@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "bearing": 307,
+        "current_status": "IN_TRANSIT_TO",
+        "current_stop_sequence": 11,
+        "direction_id": 0,
+        "label": "0670",
+        "latitude": 42.36337213,
+        "longitude": -71.0607825,
+        "occupancy_status": null,
+        "speed": null,
+        "updated_at": "2022-06-27T18:44:44-04:00"
+      },
+      "id": "y0670",
+      "links": { "self": "/vehicles/y0670" },
+      "relationships": {
+        "route": { "data": { "id": "4", "type": "route" } },
+        "stop": { "data": { "id": "113", "type": "stop" } },
+        "trip": { "data": { "id": "52109960", "type": "trip" } }
+      },
+      "type": "vehicle"
+    }
+  ],
+  "included": [
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "A04-3",
+        "direction_id": 0,
+        "headsign": "North Station",
+        "name": "",
+        "wheelchair_accessible": 1
+      },
+      "id": "52109960",
+      "links": { "self": "/trips/52109960" },
+      "relationships": {
+        "route": { "data": { "id": "4", "type": "route" } },
+        "route_pattern": { "data": { "id": "4-1-0", "type": "route_pattern" } },
+        "service": {
+          "data": { "id": "BUS32022-hba32011-Wdy-02", "type": "service" }
+        },
+        "shape": { "data": { "id": "040065", "type": "shape" } }
+      },
+      "type": "trip"
+    }
+  ],
+  "jsonapi": { "version": "1.0" }
+}
